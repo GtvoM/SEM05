@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retos - Código</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+
+
+  <div class="tabs">
+
+    <input type="radio" name="tabs" id="tab1" checked >
+    <label for="tab1">
+      <i class="fas fa-medal ibro"></i><span>RETO1</span>
+    </label>
+
+    <input type="radio" name="tabs" id="tab2">
+    <label for="tab2">
+      <i class="fas fa-medal ipla"></i><span>RETO2</span>
+    </label>
+
+    <input type="radio" name="tabs" id="tab3">
+    <label for="tab3">
+      <i class="fas fa-medal ioro"></i><span>RETO3</span>
+    </label>
+    <div id="tab-content1" class="tab-content">
+    <div class="gtvo_l">
+          <form id="GanxL">
+            <p id="Gan"></p>
+            <span>Litros Producidos</span>
+            <input type="number" id="canL" placeholder="Ej. 1" onChange="GanxL();">
+            <span>Precio x Galón</span>
+            <input type="number" id="prG" placeholder="S/" onChange="GanxL();">
+          </form>
+        </div>
+    </div> 
+    <div id="tab-content2" class="tab-content">
+      <div class="gtvo_l">
+        <form id="HAMB">
+          <p id="Pag"></p>
+          <span>N° de Hamburguesa</span>
+          <input type="number" id="N_H" placeholder="Ej. 1" required>
+          <span>Tipo de Hamburguesa</span>
+          <select id="T_H" name="T_H">
+            <option value="0">-- Seleccione --</option>
+            <option value="1">Simple</option>
+            <option value="2">Doble</option>
+            <option value="3">Triple</option>
+            </select>
+            <span>Tipo de Pago</span>
+            <select id="T_P" name="T_P">
+              <option value="0">-- Seleccione --</option>
+              <option value="1">Tarjeta de Crédito</option>
+              <option value="2">Pago en efectivo</option>
+              </select>
+              <input type="button" value="Calcular" onclick="NHAM()">
+              <input type="reset" />
+        </form>
+      </div>
+    </div> 
+    <div id="tab-content3" class="tab-content">
+      <div class="gtvo_l">
+        <form id="NCIT">
+          <p id="CoC"></p>
+          <p id="CoT"></p>
+          <span>N° de Citas</span>
+          <input type="number" id="N_C" placeholder="Ej. 1" required>
+              <input type="button" value="Calcular" onclick="NCIT()">
+              <input type="reset" />
+        </form>
+      </div>
+    </div> 
+</div>
+  <script src="./js/op.js"></script>
+</body>
+</html>
